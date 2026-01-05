@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+/* font-family: "Chicle", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+/* font-family: "Cormorant Garamond", serif; */
+:root {
+  --font-primary: 'Lato', sans-serif;
+  --heading-font: 'Cormorant Garamond', serif;
+  --color-primary: #000;
+  --color-secondary: #f4d35e; 
+  --color-text: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: #000;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+}
+
+/* Reusable styles */
+.heading-primary {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 60rem;
+  font-size: 5.4rem;
+}
+
+.heading-description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #333333;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 4.2rem;
+}
+.cta-button {
+  box-shadow: inset 0 0 100px 2px var(--color-primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-block: 2.2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.blur-down{
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    bottom: 0;
+    left: 0;
+    background: var(--color-secondary);
+    filter: blur(10rem);
+    z-index: 1;
+}
+
+/* ----- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-img-box{
+    position: relative;
+}
+
+.hero-img {
+    height: 50rem;
+    width: auto;
+    z-index: -1;
+    transform: translateY(-10%);
+}
+
+.hero-stat{
+    position: absolute;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    padding: 1rem 2rem;
+    text-align: center;
+    z-index: 2;
+    top: 0;
+    box-shadow: inset 0 0 30px var(--color-secondary);
+    transition: all 2s;
+    animation: upDownMoviment 2s infinite;
+    /* border: 2px solid var(--color-primary); */
+}
+
+/* Animations */
+
+@keyframes upDownMoviment {
+    0%{
+        transform: translateY(20rem) translateX(-14rem) rotate(10deg);
+    }100%{
+        transform: translateY(20rem) translateX(-14rem) rotate(-10deg);
+    }
+}
