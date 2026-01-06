@@ -4,8 +4,7 @@ export default function Nav(){
             <ul className="main-nav-list">
                 <li className="nav-list-item">
                     <button>
-                        <ion-icon name="bookmark-outline" className = "icon"></ion-icon>
-                    <p>guardados</p>
+                        <ion-icon name="cut" className = "icon"></ion-icon>
                         </button>
                 </li>
                 <li className="nav-list-item menu-btn">
