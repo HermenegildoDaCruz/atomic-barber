@@ -175,7 +175,7 @@ button{
 
 /*  */
 .why-us{
-  margin-block: 3.2rem;
+  padding-top: 3.2rem;
 }
 .why-us-img-box{
     position: relative;
@@ -195,7 +195,16 @@ button{
     box-shadow: var(--inset-shadow);
     padding: .6rem;
 }
-
+.hair-style-prices{
+    background-color: var(--color-primary);
+    color: #fff;
+    box-shadow: var(--inset-shadow);
+}
+.hair-style-prices .heading-secondary{
+    color: var(--color-secondary);
+    text-align: center;
+    padding-block: 3.2rem;
+}
 /* Animations */
 
 @keyframes upDownMoviment {
