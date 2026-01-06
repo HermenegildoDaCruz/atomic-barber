@@ -1,4 +1,6 @@
 import hairstylesImage from "../assets/images/avatar-right.png";
+import AnimatedListItem from "./AnimatedListItem";
+
 
 export default function WhyUs() {
   return (
@@ -10,23 +12,23 @@ export default function WhyUs() {
           <div className="blur-down"></div>
         </div>
         <ul className="why-us-list grid grid-2">
-          <li className="why-us-item">
+          <AnimatedListItem className="why-us-item">
             <ion-icon name="cut-outline" className="why-us-icon"></ion-icon>
             <h3 className="heading-terciary">Profissionais Experientes</h3>
             <p>
               Nossos barbeiros são qualificados e atualizados com as últimas
               tendências para garantir um visual alinhado ao teu estilo.
             </p>
-          </li>
-          <li className="why-us-item">
+          </AnimatedListItem>
+          <AnimatedListItem className="why-us-item">
             <ion-icon name="person-outline" className="why-us-icon"></ion-icon>
             <h3 className="heading-terciary">Atendimento Personalizado</h3>
             <p>
               Analisamos o formato do rosto, estilo de vida e preferência
               pessoal para entregar um resultado sob medida.
             </p>
-          </li>
-          <li className="why-us-item">
+          </AnimatedListItem>
+          <AnimatedListItem className="why-us-item">
             <ion-icon
               name="business-outline"
               className="why-us-icon"
@@ -36,8 +38,8 @@ export default function WhyUs() {
               Criamos um espaço confortável, limpo e moderno, onde o corte é uma
               experiência, não apenas um serviço.
             </p>
-          </li>
-          <li className="why-us-item">
+          </AnimatedListItem>
+          <AnimatedListItem className="why-us-item">
             <ion-icon
               name="shield-checkmark-outline"
               className="why-us-icon"
@@ -47,7 +49,7 @@ export default function WhyUs() {
               Utilizamos produtos profissionais e seguimos padrões rigorosos de
               higiene para garantir tua segurança e bem-estar.
             </p>
-          </li>
+          </AnimatedListItem>
         </ul>
       </div>
     </section>

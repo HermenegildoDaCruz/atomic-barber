@@ -7,6 +7,11 @@ export default function Nav(){
                         <ion-icon name="cut" className = "icon"></ion-icon>
                         </button>
                 </li>
+                <li>
+                     <button>
+                        <ion-icon name="cart" className = "icon"></ion-icon>
+                        </button> 
+                </li>
                 <li className="nav-list-item menu-btn">
                     <button><ion-icon name="reorder-two-outline" className = "icon"></ion-icon></button>
                 </li>
