@@ -1,18 +1,25 @@
-export const hairstylePrices = [
-  {
+import { image } from "motion/react-client"
+import hairstyle_1 from "../assets/images/hairstyles/hairstyle-1.png"
+import hairstyle_2 from "../assets/images/hairstyles/hairstyle-2.png"
+import hairstyle_3 from "../assets/images/hairstyles/hairstyle-3.png"
+
+export const hairstylePrices = {
     adults: [
       {
         id: 1,
+        image: hairstyle_1,
         name: "Corte + Desenho",
         price: 1800,
       },
       {
         id: 2,
+        image: hairstyle_2,
         name: "Francês",
         price: 1500,
       },
       {
         id: 3,
+        image: hairstyle_3,
         name: "Corte + Barba",
         price: 3000,
       },
@@ -47,7 +54,4 @@ export const hairstylePrices = [
      }
 
     ],
-  },
-
-  
-];
+  }

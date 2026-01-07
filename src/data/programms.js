@@ -14,4 +14,5 @@
 //     duration: "1 month",
 //     price: 12000,
 //     },
+// Escubra o corte perfeito pra ti
 // ]

@@ -5,7 +5,7 @@
   --font-primary: 'Open Sans', sans-serif;
   --heading-font: 'Cormorant Garamond', serif;
   --color-primary: #000;
-  --color-secondary: #f4d35e; 
+  --color-accent: #f4d35e; 
   --color-text: #343a40;
   --inset-shadow: inset 0 0 100px 2px var(--color-primary);
 }
@@ -90,7 +90,7 @@ button{
     height: 20rem;
     bottom: 0;
     left: 0;
-    background: var(--color-secondary);
+    background: var(--color-accent);
     filter: blur(10rem);
     z-index: 1;
 }
@@ -110,7 +110,24 @@ button{
 .grid-2{
     grid-template-columns: repeat(2, 1fr);
 }
-
+.menu{
+    list-style: none;
+    color: #fff;
+    display: flex;
+    place-items: center;
+}
+.menu-btn{
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    box-shadow: inset 0 0 30px #fff;
+    padding: 1rem 4rem;
+    color: #fff;
+    margin-block: 2rem;
+    border: 3px solid transparent;
+}
+.btn-actived{
+    border: 3px solid var(--color-accent);
+}
 /* ----- */
 .main-nav{
   display: flex;
@@ -132,7 +149,7 @@ button{
 .menu-btn button{
     padding: .8rem 1.2rem;
     border: 2px solid var(--color-primary);
-    box-shadow: inset 0 0 30px var(--color-secondary);
+    box-shadow: inset 0 0 30px var(--color-accent);
     transition: all .3s;
 }
 
@@ -165,7 +182,7 @@ button{
     text-align: center;
     z-index: 2;
     top: 0;
-    box-shadow: inset 0 0 30px var(--color-secondary);
+    box-shadow: inset 0 0 30px var(--color-accent);
     transition: all 2s;
     animation: upDownMoviment 2s infinite;
     /* border: 2px solid var(--color-primary); */
@@ -189,19 +206,55 @@ button{
 }
 .why-us-icon{
     font-size: 3rem;
-    color: var(--color-secondary);
+    color: var(--color-accent);
     box-shadow: var(--inset-shadow);
     padding: .6rem;
 }
-.hair-style-prices{
+.hairstyle-prices{
     background-color: var(--color-primary);
     color: #fff;
     box-shadow: var(--inset-shadow);
 }
-.hair-style-prices .heading-secondary{
-    color: var(--color-secondary);
+.hairstyle-prices .heading-secondary{
+    color: var(--color-accent);
     text-align: center;
     padding-block: 3.2rem;
+}
+
+.hairstyle-list{
+    list-style: none;
+    display: flex;
+    place-items: center;
+    gap: 1.2rem;
+    overflow-x: scroll;
+}
+.hairstyle{
+    min-width: 40rem;
+    color: #fff;
+}
+.hairstyle-img-box{
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+}
+.hairstyle-img{
+    width: 100%;
+    transform: translateY(-12%);
+   
+}
+.hairstyle-price{
+    color: inherit;
+    font-size: 2.4rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+.hairstyle-btn{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: inherit;
+    box-shadow: inset 0 0 30px var(--color-accent);
+
 }
 /* Animations */
 
