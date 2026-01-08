@@ -2,6 +2,7 @@ import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import WhyUs from "./components/WhyUs"
 import HairStylePrices from "./components/HairStylePrices"
+import PlansAndProgramms from "./components/PlansAndProgramms"
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <WhyUs />
       <HairStylePrices />
+      <PlansAndProgramms />
     </>
   )
 }

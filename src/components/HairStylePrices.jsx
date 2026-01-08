@@ -12,9 +12,8 @@ export default function HairStylePrices(){
     setShowAdultsPrices(false)
   }
 
-    //   const hairstyles = showAdultsPrices ? hairstylePrices.adults:hairstylePrices.children
-    const hairstyles = hairstylePrices.adults
-  
+  const hairstyles = showAdultsPrices ? hairstylePrices.adults:hairstylePrices.children
+
   return (
     <section className="hairstyle-prices container">
       <h2 className="heading-secondary">Cortes de cabelo</h2>
