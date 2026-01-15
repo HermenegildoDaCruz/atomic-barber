@@ -265,7 +265,9 @@ button{
     padding: 1rem;
     color: inherit;
     box-shadow: inset 0 0 30px var(--color-accent);
-
+}
+.hairstyle-btn:hover, .hairstyle-btn:active{
+    box-shadow: inset 0 0 40px var(--color-accent);
 }
 
 .plans-programs{
@@ -278,6 +280,11 @@ button{
 .plans-programs .menu-btn{
     color: var(--color-primary);
     box-shadow: inset 0 0 30px var(--color-primary);
+}
+.plans-programs .menu-btn:hover, .plans-programs .menu-btn:active{
+    transition: all .3s;
+    color: #e6e6e6;
+    box-shadow: inset 0 0 80px var(--color-primary);
 }
 
 .plan{
@@ -359,6 +366,57 @@ button{
     box-shadow: inset 0 0 30px #fff;
 }
 
+.program-img-box{
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+    box-shadow: inset 0 0 44rem var(--color-accent);
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+}
+.program-img{
+    width: 100%;
+    transform: translateY(-12%);
+}
+.program-price{
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 2.4rem;
+}
+.program-content{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: #cccccc;
+    margin: 1.2rem;
+    padding: 1.2rem;
+}
+.program-content .heading-terciary{
+    font-size: 3rem;
+}
+.program-content p{
+    color: #b3b3b3;
+}
+
+.program-btn{
+    padding: .8rem 1.2rem;
+    width: 100%;
+    margin-top: 2rem;
+    border: 2px solid var(--color-primary);
+    box-shadow: inset 0 0 30px var(--color-accent);
+    transition: all .3s;
+    font-size: 2rem;
+    color: inherit;
+}
+.program-btn:hover, .program-btn:active{
+    box-shadow: inset 0 0 40px var(--color-accent);
+
+}
 /* Animations */
 
 @keyframes upDownMoviment {

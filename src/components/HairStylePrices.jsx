@@ -1,17 +1,10 @@
 import { useState } from "react";
 import { hairstylePrices } from "../data/hairstyle-prices";
 import AnimatedListItem from "./AnimatedListItem";
+import { useBooleanHook } from "../hooks/useBooleanHook";
 
 export default function HairStylePrices(){
-  const [showAdultsPrices, setShowAdultsPrices] = useState(true)
-  
-  function showAdultsHairstyles(){
-    setShowAdultsPrices(true)
-  }
-  function showChildrenHairstyles(){
-    setShowAdultsPrices(false)
-  }
-
+  const { value: showAdultsPrices, setTrue: showAdultsHairstyles, setFalse: showChildrenHairstyles } = useBooleanHook(true);
   const hairstyles = showAdultsPrices ? hairstylePrices.adults:hairstylePrices.children
 
   return (
