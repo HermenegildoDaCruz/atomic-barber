@@ -4,7 +4,7 @@
 :root {
   --font-primary: 'Open Sans', sans-serif;
   --heading-font: 'Cormorant Garamond', serif;
-  --color-primary: #000;
+  --color-primary: #181509;
   --color-accent: #f4d35e; 
   --color-text: #343a40;
   --inset-shadow: inset 0 0 100px 2px var(--color-primary);
@@ -127,8 +127,19 @@ button{
     margin-block: 2rem;
     border: 3px solid transparent;
 }
+
 .btn-actived{
     border: 3px solid var(--color-accent);
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    z-index: 5;
 }
 /* ----- */
 .main-nav{
@@ -138,7 +149,7 @@ button{
 .main-nav-list{
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     list-style: none;
     margin-block: 2rem;
     padding: .4rem;
@@ -148,11 +159,53 @@ button{
     align-items: center;
     gap: .8rem;
 }
-.menu-btn button{
+.toggle-menu-btn{
+    box-shadow: inset 0 0 100px var(--color-primary);
+    padding: 1.2rem;
+    z-index: 15;
+    position: fixed;
+    right: 20px;
+    top: 14px;
+    backdrop-filter: blur(4px);
+    border: 2px solid #e6e6e6;
+}
+.toggle-menu-btn .icon{
+    color: var(--color-accent);
+}
+/* .menu-btn button{
     padding: .8rem 1.2rem;
     border: 2px solid var(--color-primary);
     box-shadow: inset 0 0 30px var(--color-accent);
     transition: all .3s;
+} */
+.side-bar{
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30rem;
+    height: 100vh;
+    background-color: var(--color-primary);
+     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    /* transform: translateX(100%); */
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+}
+/* .side-bar-open{
+    transform: translateX(0);
+} */
+.side-bar-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.side-bar-list-item a{
+    color: var(--color-accent);
+    text-decoration: none;
 }
 
 .hero {

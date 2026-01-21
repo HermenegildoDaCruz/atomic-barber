@@ -1,8 +1,8 @@
-export default function Nav(){
+export default function Nav({onToggleSideBar, isSideBarOpen}) {
     return (
         <nav className="main-nav container">
             <ul className="main-nav-list">
-                <li className="nav-list-item">
+                {/* <li className="nav-list-item">
                     <button>
                         <ion-icon name="cut" className = "icon"></ion-icon>
                         </button>
@@ -11,10 +11,14 @@ export default function Nav(){
                      <button>
                         <ion-icon name="cart" className = "icon"></ion-icon>
                         </button> 
-                </li>
-                <li className="nav-list-item menu-btn">
-                    <button><ion-icon name="reorder-two-outline" className = "icon"></ion-icon></button>
-                </li>
+                </li> */}
+                <li className="nav-list-item toggle-menu-btn">
+                    <button onClick={onToggleSideBar}>
+                        {
+                            isSideBarOpen ? <ion-icon name="close-outline" className = "icon"></ion-icon>:<ion-icon name="reorder-two-outline"></ion-icon>
+                        }
+                    </button>
+                </li >
             </ul>
         </nav>
     )
