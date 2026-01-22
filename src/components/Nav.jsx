@@ -15,7 +15,7 @@ export default function Nav({onToggleSideBar, isSideBarOpen}) {
                 <li className="nav-list-item toggle-menu-btn">
                     <button onClick={onToggleSideBar}>
                         {
-                            isSideBarOpen ? <ion-icon name="close-outline" className = "icon"></ion-icon>:<ion-icon name="reorder-two-outline"></ion-icon>
+                            isSideBarOpen ? <ion-icon name="close-outline" className = "icon"></ion-icon>:<ion-icon name="reorder-two-outline" className = "icon"></ion-icon>
                         }
                     </button>
                 </li >

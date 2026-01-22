@@ -189,7 +189,10 @@ button{
     background-color: var(--color-primary);
      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    /* transform: translateX(100%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     transition: transform 0.3s ease-in-out;
     z-index: 10;
 }
@@ -208,11 +211,29 @@ button{
     text-decoration: none;
 }
 
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.social-link{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    place-items: center;
+    padding: .8rem;
+    box-shadow: inset 0 0 30px var(--color-accent);
+}
+.social-link .icon{
+    color: var(--color-accent);
+}
+
 .hero {
     display: flex;
     flex-direction: column;
     place-items: center;
-    height: 100vh;
+    height: 98vh;
+    margin-top: 4rem;
     overflow: hidden;
 }
 

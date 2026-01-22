@@ -19,16 +19,16 @@ export default function SideBar({ open }){
                     <a href="#products">
                         Products
                     </a>
-                </li>
-                {/* <li className="side-bar-list-item">
-                    <div className="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=100090123456789" target="_blank" rel="noopener noreferrer">
-                            <ion-icon name="logo-facebook" className = "icon"></ion-icon>
-                        </a>
-                    </div>
-                </li> */}
-             
+                </li> 
             </ul>
+            <div className="social-links">
+                <a href="/" target="_blank" className="social-link">
+                    <ion-icon name="logo-facebook" className = "icon"></ion-icon>
+                </a>
+                <a href="/" target="_blank" className="social-link">
+                    <ion-icon name="logo-whatsapp" className = "icon"></ion-icon>
+                </a>
+            </div>
         </aside>
         </>
 
