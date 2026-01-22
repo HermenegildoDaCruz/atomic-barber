@@ -1,23 +1,26 @@
-import Nav from "./components/Nav";
-import SideBar from "./components/SideBar";
-import Hero from "./components/Hero";
-import WhyUs from "./components/WhyUs";
-import HairStylePrices from "./components/HairStylePrices";
-import PlansAndProgramms from "./components/PlansAndProgramms";
-import { useBooleanHook } from "./hooks/useBooleanHook";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "../src/pages/layout/RootLayout";
+import HomePage from "./pages/HomePage";
+
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <RootLayout/>,
+      children: [
+        {
+          index: true,
+          element: <HomePage/>,
+        }
+      ]
+  }
+]
+)
 
 function App() {
-  const { value: sideBarOpen, toggle: toggleSideBar } = useBooleanHook(false);
-
+  
   return (
-    <>
-      <Nav isSideBarOpen={sideBarOpen} onToggleSideBar={toggleSideBar} />
-      {sideBarOpen && <SideBar open={sideBarOpen} />}
-      <Hero />
-      <WhyUs />
-      <HairStylePrices />
-      <PlansAndProgramms />
-    </>
+    <RouterProvider router={router}/>
   );
 }
 
