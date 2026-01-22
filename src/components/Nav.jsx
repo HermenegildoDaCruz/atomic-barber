@@ -1,17 +1,9 @@
+import logo from "../assets/logo.png"
 export default function Nav({onToggleSideBar, isSideBarOpen}) {
     return (
         <nav className="main-nav container">
             <ul className="main-nav-list">
-                {/* <li className="nav-list-item">
-                    <button>
-                        <ion-icon name="cut" className = "icon"></ion-icon>
-                        </button>
-                </li>
-                <li>
-                     <button>
-                        <ion-icon name="cart" className = "icon"></ion-icon>
-                        </button> 
-                </li> */}
+                <img src={logo} alt="Logo" className="logo"/>
                 <li className="nav-list-item toggle-menu-btn">
                     <button onClick={onToggleSideBar}>
                         {

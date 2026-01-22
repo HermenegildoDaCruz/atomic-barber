@@ -13,7 +13,7 @@ export default function HairStylePrices() {
     : hairstylePrices.children;
 
   return (
-    <section className="hairstyle-prices container">
+    <section className="hairstyle-prices container" >
       <h2 className="heading-secondary">Cortes de cabelo</h2>
       <menu className="menu">
         <li>

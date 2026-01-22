@@ -8,7 +8,7 @@ export const PROGRAMMS = [
     description: "Tenha waves perfeitas em 2 semanas com nosso programa especializado.",
     image: wavesImage,
     duration: "2 semanas",
-    price: "10.000",
+    price: "10k",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const PROGRAMMS = [
     description: "Mantenha seus waves frescos e definidos com nosso programa de manutenção mensal.",
     image: rastaImage,
     duration: "1 mês",
-    price: "12.000",
+    price: "12k",
     },
 ]
 // Escubra o corte perfeito pra ti
