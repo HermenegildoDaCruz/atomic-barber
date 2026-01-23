@@ -4,8 +4,8 @@ export default function Nav({onToggleSideBar, isSideBarOpen}) {
         <nav className="main-nav container">
             <ul className="main-nav-list">
                 <img src={logo} alt="Logo" className="logo"/>
-                <li className="nav-list-item toggle-menu-btn">
-                    <button onClick={onToggleSideBar}>
+                <li className="nav-list-item toggle-menu-btn" onClick={onToggleSideBar}>
+                    <button>
                         {
                             isSideBarOpen ? <ion-icon name="close-outline" className = "icon"></ion-icon>:<ion-icon name="reorder-two-outline" className = "icon"></ion-icon>
                         }

@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import WhyUs from "../components/WhyUs";
 import HairStylePrices from "../components/HairStylePrices";
 import PlansAndProgramms from "../components/PlansAndProgramms";
-
+import Footer from "../components/Footer";
 function HomePage() {
   
   return (
@@ -11,6 +11,7 @@ function HomePage() {
       <WhyUs />
       <HairStylePrices />
       <PlansAndProgramms />
+      <Footer />
     </>
   );
 }

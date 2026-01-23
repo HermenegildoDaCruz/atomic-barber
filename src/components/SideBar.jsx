@@ -1,4 +1,5 @@
 import BackDrop from "./BackDrop";
+import SocialMedia from "./SocialMedia";
 import { NavLink } from "react-router-dom";
 import { motion } from "motion/react";
 
@@ -16,20 +17,16 @@ export default function SideBar({ open }) {
             <NavLink to="/" className={({isActive}) => isActive ? "link--actived" : undefined}>Home</NavLink>
           </li>
           <li className="side-bar-list-item">
+            <NavLink to="/products" className={({isActive}) => isActive ? "link--actived" : undefined}>Products</NavLink>
+          </li>
+          <li className="side-bar-list-item">
             <NavLink to="#hairstyle-prices">Hairstyles</NavLink>
           </li>
           {/* <li className="side-bar-list-item">
             <NavLink to="#products">Products</NavLink>
           </li> */}
         </ul>
-        <div className="social-links">
-          <a href="/" target="_blank" className="social-link">
-            <ion-icon name="logo-facebook" className="icon"></ion-icon>
-          </a>
-          <a href="/" target="_blank" className="social-link">
-            <ion-icon name="logo-whatsapp" className="icon"></ion-icon>
-          </a>
-        </div>
+        <SocialMedia/>
       </motion.aside>
     </>
   );
