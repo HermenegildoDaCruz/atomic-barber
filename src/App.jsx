@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "../src/pages/layout/RootLayout";
 import ErrorPage from "./pages/ErrorPage";
-import HomePage from "./pages/HomePage";
+import HomePage, {action as newsletterAction} from "./pages/HomePage";
+
 
 const router = createBrowserRouter(
   [
@@ -13,7 +14,8 @@ const router = createBrowserRouter(
         {
           index: true,
           element: <HomePage/>,
-        }
+          action: newsletterAction,
+        },
       ]
   }
 ]

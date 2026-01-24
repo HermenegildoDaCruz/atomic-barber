@@ -3,7 +3,7 @@ import Programms from "./Programms";
 import { useBooleanHook } from "../hooks/useBooleanHook";
 
 export default function PlansAndProgramms() {
-  const { value: showPlans, setTrue: showPlansView, setFalse: showProgrammsView } = useBooleanHook(false);
+  const { value: showPlans, setTrue: showPlansView, setFalse: showProgrammsView } = useBooleanHook(true);
 
   return (
     <section className="plans-programs container">
