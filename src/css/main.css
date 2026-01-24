@@ -311,6 +311,7 @@ button {
   background-color: var(--color-primary);
   color: #fff;
   box-shadow: var(--inset-shadow);
+  padding-block: 3.2rem;
 }
 .hairstyle-prices .heading-secondary {
   color: var(--color-accent);

@@ -10,9 +10,9 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <WhyUs />
       <HairStylePrices />
       <PlansAndProgramms />
+      <WhyUs />
       <Footer />
     </>
   );
