@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import Products from "../components/Products";
 import WhyUs from "../components/WhyUs";
 import HairStylePrices from "../components/HairStylePrices";
 import PlansAndProgramms from "../components/PlansAndProgramms";
@@ -11,6 +12,7 @@ function HomePage() {
     <>
       <Hero />
       <HairStylePrices />
+      <Products />
       <PlansAndProgramms />
       <WhyUs />
       <Footer />
