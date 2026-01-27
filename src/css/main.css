@@ -114,11 +114,15 @@ button {
   gap: 2rem;
   align-items: center;
 }
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
-.grid-2 {
-  grid-template-columns: repeat(2, 1fr);
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 .red{
   background-color: #ff0000d7;
@@ -173,6 +177,18 @@ button {
     height: 4rem;
     color: var(--color-accent);
   }
+  .item-btn {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-top: 3.2rem;
+  color: inherit;
+  box-shadow: inset 0 0 30px var(--color-accent);
+}
+.item-btn:hover,
+.item-btn:active {
+  box-shadow: inset 0 0 40px var(--color-accent);
+}
 /* ----- */
 .main-nav {
   display: flex;
@@ -428,17 +444,6 @@ button {
   font-family: var(--heading-primary-font);
   font-weight: 700;
 }
-.hairstyle-btn {
-  width: 100%;
-  font-size: 1.6rem;
-  padding: 1rem;
-  color: inherit;
-  box-shadow: inset 0 0 30px var(--color-accent);
-}
-.hairstyle-btn:hover,
-.hairstyle-btn:active {
-  box-shadow: inset 0 0 40px var(--color-accent);
-}
 
 .plans-programs {
   padding-block: 3.2rem;
@@ -597,20 +602,28 @@ button {
 }
 .products-list{
   list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  /* overflow-x: scroll; */
 }
 .product-item{
-  position: relative;
-  height: 100%;
+  position: relative;  
   padding-bottom: 1.8rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .heading-terciary.product-name{
   font-weight: 700;
 }
-
+.product-img-box{
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+}
 .product-img{
-  width: 30rem;
-  height: 30rem;
-
+  width: 100%;
 }
 .product-description,.deliver-price{
   color: #333333;

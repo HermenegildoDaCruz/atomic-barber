@@ -18,6 +18,7 @@ export default function ProductItem({ product }) {
     <li
       className="product-item"
       onMouseOver={showProductBtnsHandler}
+      onClick={showProductBtnsHandler}
       onMouseLeave={HideProductBtnsHandler}
     >
       <button onClick={addOrRemoveFavoriteHandler} className="favorite-btn">
@@ -27,21 +28,26 @@ export default function ProductItem({ product }) {
           <ion-icon name="heart-outline" className="favorite-icon"></ion-icon>
         )}
       </button>
-      <div className="product-img-box">
-        <img
-          src={
-            product.image
-              ? product.image
-              : product.colors[currentColorIndex].image
-          }
-          alt={product.name}
-          className="product-img"
-        />
+      <div>
+        <div className="product-img-box">
+          <img
+            src={
+              product.image
+                ? product.image
+                : product.colors[currentColorIndex].image
+            }
+            alt={product.name}
+            className="product-img"
+          />
+        </div>
+        <h2 className="heading-terciary product-name">{product.name}</h2>
+        <p className="product-description">{product.description}</p>
       </div>
-      <h2 className="heading-terciary product-name">{product.name}</h2>
-      <p className="product-description">{product.description}</p>
-      <p className="product-price">{product.price} AOA</p>
-      <p className="deliver-price">+2.000kz da entrega</p>
+      <div>
+        <p className="product-price">{product.price} AOA</p>
+        <p className="deliver-price">+2.000kz da entrega</p>
+        <button className="item-btn">Comprar</button>
+      </div>
       {showProductBtns && !product.image && (
         <div className="product-colors">
           <button

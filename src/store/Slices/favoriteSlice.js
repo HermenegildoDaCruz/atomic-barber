@@ -1,12 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { i } from "motion/react-client";
+
+
+const initialState = localStorage.getItem("favorites")
+  ? JSON.parse(localStorage.getItem("favorites"))
+  : {
+    products: [],
+    hairstyles: [],
+  };
 
 export const favoriteSlice = createSlice({
   name: "favorites",
-  initialState: {
-    products: [],
-    hairstyles: [],
-  },
+  initialState,
   reducers: {
     addOrRemoveFromFavorites: (state, action) => {
       const { type, item } = action.payload;

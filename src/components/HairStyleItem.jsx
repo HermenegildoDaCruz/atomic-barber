@@ -24,7 +24,7 @@ export default function HairStyleItem({ hairstyle }) {
       </div>
       <h3 className="heading-terciary">{hairstyle.name}</h3>
       <p className="hairstyle-price">{hairstyle.price} A0A</p>
-      <button className="hairstyle-btn">Selecionar</button>
+      <button className="item-btn">Selecionar</button>
     </AnimatedListItem>
   );
 }

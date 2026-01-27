@@ -2,6 +2,10 @@ import durag_red from "../assets/images/products/durags/red.png"
 import durag_blue from "../assets/images/products/durags/blue.png"
 import durag_black from "../assets/images/products/durags/black.png"
 
+import brush from "../assets/images/products/brush.png"
+import pomade from "../assets/images/products/pomade.png"
+import fullPackage from "../assets/images/products/full-package.png"
+
 export const products = [
   {
     id: "p1",
@@ -35,17 +39,27 @@ export const products = [
     description: "Escova de cabelo para waves.",
     category: "Beleza",
     stock: 58,
-    image: durag_black,
+    image: brush,
     colors: null,
   },
   {
     id: "p3",
+    name: "Pacote Completo para Waves",
+    price: "10k",
+    description: "Escova + Pomada + Durag.",
+    category: "Beleza",
+    stock: 10,
+    image: fullPackage,
+    colors: null,
+  },
+  {
+    id: "p4",
     name: "Pomada para waves",
     price: "6k",
     description: "Pomada para modelar e fixar penteados.",
     category: "Beleza",
     stock: 35,
-    image: durag_black,
+    image: pomade,
     colors: null,
   },
 ];
