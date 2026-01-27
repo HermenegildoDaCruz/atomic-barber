@@ -1,6 +1,6 @@
-import durag_red from "../assets/images/products/durag/red.png"
-import durag_blue from "../assets/images/products/durag/blue.png"
-import durag_black from "../assets/images/products/durag/black.png"
+import durag_red from "../assets/images/products/durags/red.png"
+import durag_blue from "../assets/images/products/durags/blue.png"
+import durag_black from "../assets/images/products/durags/black.png"
 
 export const products = [
   {
