@@ -4,7 +4,7 @@ import durag_black from "../assets/images/products/durag/black.png"
 
 export const products = [
   {
-    id: 1,
+    id: "p1",
     name: "Durag",
     price: "4k",
     description: "Durag de algodão para proteção do cabelo.",
@@ -29,7 +29,7 @@ export const products = [
     ],
   },
   {
-    id: 2,
+    id: "p2",
     name: "Escova de Cabelo",
     price: "2k",
     description: "Escova de cabelo para waves.",
@@ -39,7 +39,7 @@ export const products = [
     colors: null,
   },
   {
-    id: 3,
+    id: "p3",
     name: "Pomada para waves",
     price: "6k",
     description: "Pomada para modelar e fixar penteados.",

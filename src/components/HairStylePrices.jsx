@@ -1,5 +1,5 @@
 import { hairstylePrices } from "../data/hairstyle-prices";
-import AnimatedListItem from "./AnimatedListItem";
+import HairStyleItem from "./HairStyleItem";
 import { useBooleanHook } from "../hooks/useBooleanHook";
 
 export default function HairStylePrices() {
@@ -35,18 +35,7 @@ export default function HairStylePrices() {
       </menu>
       <ul className="hairstyle-list">
         {hairstyles.map((hairstyle) => (
-          <AnimatedListItem key={hairstyle.id} className="hairstyle">
-            <div className="hairstyle-img-box">
-              <img
-                src={hairstyle.image}
-                alt={hairstyle.name}
-                className="hairstyle-img"
-              />
-            </div>
-            <h3 className="heading-terciary">{hairstyle.name}</h3>
-            <p className="hairstyle-price">{hairstyle.price} A0A</p>
-            <button className="hairstyle-btn">Selecionar</button>
-          </AnimatedListItem>
+          <HairStyleItem key={hairstyle.id} hairstyle={hairstyle} />
         ))}
       </ul>
     </section>

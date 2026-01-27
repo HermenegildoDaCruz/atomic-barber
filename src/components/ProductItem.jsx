@@ -1,12 +1,29 @@
 import { useBooleanHook } from "../hooks/useBooleanHook";
 import { useState } from "react";
+import { addOrRemoveFromFavorites } from "../store/Slices/favoriteSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function ProductItem({ product }) {
+    const favoriteProducts = useSelector(state => state.favorites.products);
+    const isFavorite = favoriteProducts.some(item => item.id === product.id);
     const {value: showProductBtns, setTrue:showProductBtnsHandler,setFalse:HideProductBtnsHandler} = useBooleanHook(false)
     const [currentColorIndex, setCurrentColorIndex] = useState(0)
-    
+    const dispatch = useDispatch()
+   
+    function addOrRemoveFavoriteHandler() {
+      const payload = {
+        type: 'product',
+        item: product,
+      };
+      dispatch(addOrRemoveFromFavorites(payload));
+    }
     return (
     <li className="product-item" onMouseOver={showProductBtnsHandler} onMouseLeave={HideProductBtnsHandler}>
+      <button onClick={addOrRemoveFavoriteHandler} className="favorite-btn">
+        {
+          isFavorite ? <ion-icon name="heart" className="favorite-icon"></ion-icon>:<ion-icon name="heart-outline" className="favorite-icon"></ion-icon>
+        }
+      </button>
       <div className="product-img-box">
         <img
           src={product.image ? product.image : product.colors[currentColorIndex].image}

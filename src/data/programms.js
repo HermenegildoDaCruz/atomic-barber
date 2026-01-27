@@ -3,7 +3,7 @@ import rastaImage from '../assets/images/programms-images/rasta-maintenance.png'
 
 export const PROGRAMMS = [
   { 
-    id: 1,
+    id: "p1",
     name: "Waves em 2 Semanas",
     description: "Tenha waves perfeitas em 2 semanas com nosso programa especializado.",
     image: wavesImage,
@@ -11,7 +11,7 @@ export const PROGRAMMS = [
     price: "10k",
   },
   {
-    id: 2,
+    id: "p2",
     name: "Manuntenção de Rasta",
     description: "Mantenha seus waves frescos e definidos com nosso programa de manutenção mensal.",
     image: rastaImage,

@@ -11,37 +11,37 @@ import child_hairstyle_2 from "../assets/images/hairstyles/children/hairstyle-2.
 export const hairstylePrices = {
   adults: [
     {
-      id: 1,
+      id: "a1",
       image: adult_hairstyle_6,
       name: "Rasta",
       price: "40k",
     },
     {
-      id: 2,
+      id: "a2",
       image: adult_hairstyle_5,
       name: "Corte + Coloração",
       price: "4k",
     },
     {
-      id: 3,
+      id: "a3",
       image: adult_hairstyle_3,
       name: "Corte + Barba",
       price: "3k",
     },
     {
-      id: 4,
+      id: "a4",
       image: adult_hairstyle_4,
       name: "Corte + Enroladinho",
       price: "5k",
     },
     {
-      id: 5,
+      id: "a5",
       image: adult_hairstyle_2,
       name: "Francês",
       price: "1.5k",
     },
     {
-      id: 6,
+      id: "a6",
       image: adult_hairstyle_1,
       name: "Corte + Desenho",
       price: "1.8k",
@@ -49,13 +49,13 @@ export const hairstylePrices = {
   ],
   children: [
     {
-      id: 1,
+      id: "c1",
       image: child_hairstyle_1,
       name: "Corte Infantil (até 16 anos)",
       price: "1.2k",
     },
     {
-      id: 2,
+      id: "c2",
       image: child_hairstyle_2,
       name: "Corte + Tranças (até 16 anos)",
       price: "7k",
