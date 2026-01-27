@@ -355,6 +355,8 @@ button {
 }
 .why-us-img-box {
   position: relative;
+  transform: translateY(10%);
+  z-index: -1;
 }
 .why-us-img {
   width: 80%;
