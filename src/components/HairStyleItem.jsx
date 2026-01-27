@@ -1,25 +1,19 @@
 import AnimatedListItem from "./AnimatedListItem";
-import { addOrRemoveFromFavorites } from "../store/Slices/favoriteSlice";
-import { useSelector, useDispatch } from "react-redux";
+import { useFavoriteItem } from "../hooks/useFavoriteItem";
 
 export default function HairStyleItem({ hairstyle }) {
-    const favoriteHairstyles = useSelector(state => state.favorites.hairstyles);
-    const isFavorite = favoriteHairstyles.some(item => item.id === hairstyle.id);
-    const dispatch = useDispatch();
-    
-    function addOrRemoveFavoriteHandler() {
-        const payload = {
-        type: 'hairstyle',
-        item: hairstyle,
-        };
-        dispatch(addOrRemoveFromFavorites(payload));
-    }
+  const { isFavorite, addOrRemoveFavoriteHandler } = useFavoriteItem(
+    hairstyle,
+    "hairstyle"
+  );
   return (
     <AnimatedListItem className="hairstyle">
-        <button onClick={addOrRemoveFavoriteHandler} className="favorite-btn">
-        {
-          isFavorite ? <ion-icon name="heart" className="favorite-icon"></ion-icon>:<ion-icon name="heart-outline" className="favorite-icon"></ion-icon>
-        }
+      <button onClick={addOrRemoveFavoriteHandler} className="favorite-btn">
+        {isFavorite ? (
+          <ion-icon name="heart" className="favorite-icon"></ion-icon>
+        ) : (
+          <ion-icon name="heart-outline" className="favorite-icon"></ion-icon>
+        )}
       </button>
       <div className="hairstyle-img-box">
         <img

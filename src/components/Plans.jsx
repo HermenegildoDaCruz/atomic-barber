@@ -1,4 +1,6 @@
 import { motion } from "motion/react";
+
+// Clean this code
 export default function Plans() {
     return (
         <div className="plans-container grid grid-2">
