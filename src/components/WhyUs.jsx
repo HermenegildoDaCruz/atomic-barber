@@ -15,7 +15,7 @@ export default function WhyUs() {
           {whyUsData.map((item) => (
             <WhyUsListItem
               key={item.id}
-              icon={item.icon}
+              iconName={item.iconName}
               title={item.title}
               description={item.description}
             />

@@ -27,7 +27,7 @@
   html {
     font-size: 50%;
   }
-  .product-colors{
+  .product-colors {
     left: 5%;
   }
   .plans-container.grid-2 {
@@ -53,19 +53,18 @@
   .why-us-list.grid-2 {
     grid-template-columns: 1fr;
   }
-  .programms-container.grid-2{
+  .programms-container.grid-2 {
     grid-template-columns: 1fr;
   }
-  .program-content{
-    height: 28rem;
+  .program-content {
     justify-content: space-between;
   }
 }
 
 @media (max-width: 38em) {
-    html{
-        font-size: 45%;
-    }
+  html {
+    font-size: 45%;
+  }
   .signup-newsletter--form-box {
     width: 100%;
   }
@@ -81,15 +80,14 @@
   }
 }
 @media (max-width: 35em) {
-    html {
+  html {
     font-size: 60%;
   }
-    /* .products-list.grid-3 {
+  /* .products-list.grid-3 {
     grid-template-columns: 1fr;
   } */
 }
 @media (max-width: 30em) {
-  
   .heading-primary {
     font-size: 2.8rem;
   }

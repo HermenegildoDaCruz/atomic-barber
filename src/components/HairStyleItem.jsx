@@ -1,10 +1,10 @@
 import AnimatedListItem from "./AnimatedListItem";
 import { useFavoriteItem } from "../hooks/useFavoriteItem";
 
-export default function HairStyleItem({ hairstyle }) {
+export default function HairStyleItem({ item }) {
   const { isFavorite, addOrRemoveFavoriteHandler } = useFavoriteItem(
-    hairstyle,
-    "hairstyle"
+    item,
+    "hairstyle",
   );
   return (
     <AnimatedListItem className="hairstyle">
@@ -16,14 +16,10 @@ export default function HairStyleItem({ hairstyle }) {
         )}
       </button>
       <div className="hairstyle-img-box">
-        <img
-          src={hairstyle.image}
-          alt={hairstyle.name}
-          className="hairstyle-img"
-        />
+        <img src={item.image} alt={item.name} className="hairstyle-img" />
       </div>
-      <h3 className="heading-terciary">{hairstyle.name}</h3>
-      <p className="hairstyle-price">{hairstyle.price} A0A</p>
+      <h3 className="heading-terciary">{item.name}</h3>
+      <p className="hairstyle-price">{item.price} A0A</p>
       <button className="item-btn">Selecionar</button>
     </AnimatedListItem>
   );

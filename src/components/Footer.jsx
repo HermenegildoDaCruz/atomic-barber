@@ -9,13 +9,13 @@ export default function Footer(){
             <SignupNewsletter/>
             <div className="footer-content-box">
                 <div>
-                    <h3 className="heading-terciary">Páginas</h3>
+                    <h3 className="heading-terciary">Ir para secão:</h3>
                     <ul className="footer-links">
-                        <li>
-                            <NavLink to="/" className={({isActive}) => isActive ? "footer-link link--actived" : "footer-link"}>Home</NavLink>
+                        <li> 
+                            <a href="#products" className="footer-link">Hairstyles</a>
                         </li>
                         <li>
-                            <NavLink to="/products" className={({isActive}) => isActive ? "footer-link link--actived" : "footer-link"}>Products</NavLink>
+                            <a href="#products" className="footer-link">Products</a>
                         </li>
                     </ul>
                 </div>

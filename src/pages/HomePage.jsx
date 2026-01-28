@@ -19,7 +19,7 @@ function HomePage() {
     <>
       <Hero />
       <HairStylePrices />
-      {/* <Products /> */}
+      <Products />
       <PlansAndProgramms />
       <WhyUs />
     </>

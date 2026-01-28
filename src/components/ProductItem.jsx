@@ -2,9 +2,9 @@ import { useBooleanHook } from "../hooks/useBooleanHook";
 import { useFavoriteItem } from "../hooks/useFavoriteItem";
 import { useState } from "react";
 
-export default function ProductItem({ product }) {
+export default function ProductItem({ item }) {
   const { isFavorite, addOrRemoveFavoriteHandler } = useFavoriteItem(
-    product,
+    item,
     "product"
   );
   const {
@@ -32,23 +32,23 @@ export default function ProductItem({ product }) {
         <div className="product-img-box">
           <img
             src={
-              product.image
-                ? product.image
-                : product.colors[currentColorIndex].image
+              item.image
+                ? item.image
+                : item.colors[currentColorIndex].image
             }
-            alt={product.name}
+            alt={item.name}
             className="product-img"
           />
         </div>
-        <h2 className="heading-terciary product-name">{product.name}</h2>
-        <p className="product-description">{product.description}</p>
+        <h2 className="heading-terciary product-name">{item.name}</h2>
+        <p className="product-description">{item.description}</p>
       </div>
       <div>
-        <p className="product-price">{product.price} AOA</p>
+        <p className="product-price">{item.price} AOA</p>
         <p className="deliver-price">+2.000kz da entrega</p>
         <button className="item-btn">Comprar</button>
       </div>
-      {showProductBtns && !product.image && (
+      {showProductBtns && !item.image && (
         <div className="product-colors">
           <button
             className={
