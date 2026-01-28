@@ -6,10 +6,12 @@ import ProductItem from "./ProductItem";
 import HairStyleItem from "./HairStyleItem";
 import FavoriteList from "./FavoriteList";
 import SideBarList from "./SideBarList";
+import SideBarExtraInfo from "./SideBarExtraInfo";
+
 import { useState } from "react";
 
 export default function SideBar({ open, onClose }) {
-  const [turnOnFullscreen, setTurnOnFullscreen] = useState(false)
+  const [turnOnFullscreen, setTurnOnFullscreen] = useState(false);
   const favoriteProducts = useSelector((state) => state.favorites.products);
   const favoriteHairstyles = useSelector((state) => state.favorites.hairstyles);
 
@@ -28,6 +30,7 @@ export default function SideBar({ open, onClose }) {
         className={sideBarClass}
         onDoubleClick={() => setTurnOnFullscreen(!turnOnFullscreen)}
       >
+        <SideBarExtraInfo />
         <SideBarList onClose={onClose} />
         <br />
         <FavoriteList

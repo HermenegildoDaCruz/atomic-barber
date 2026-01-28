@@ -240,7 +240,7 @@ button {
   height: 100vh;
   background-color: var(--color-primary);
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -294,7 +294,7 @@ button {
   margin-bottom: 0;
 }
 .side-bar .product-colors {
-  top: 15%;
+  top: 8%;
 }
 .side-bar .product-color {
   width: 3rem;
