@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { handleScrollIntoView } from "../utils/utils-functions";
 
 export default function SideBarList({ onClose }) {
   return (
@@ -12,12 +13,12 @@ export default function SideBarList({ onClose }) {
         </NavLink>
       </li>
       <li className="side-bar-list-item">
-        <a href="#products" onClick={onClose}>
+        <a href="#products" onClick={(e) => handleScrollIntoView(e, onClose)}>
           Productos
         </a>
       </li>
       <li className="side-bar-list-item">
-        <a href="#hairstyle-prices" onClick={onClose}>
+        <a href="#hairstyle-prices" onClick={(e) => handleScrollIntoView(e, onClose)}>
           Estilos
         </a>
       </li>
