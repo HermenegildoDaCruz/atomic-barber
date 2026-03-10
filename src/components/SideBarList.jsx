@@ -13,12 +13,12 @@ export default function SideBarList({ onClose }) {
       </li>
       <li className="side-bar-list-item">
         <a href="#products" onClick={onClose}>
-          Products
+          Productos
         </a>
       </li>
       <li className="side-bar-list-item">
         <a href="#hairstyle-prices" onClick={onClose}>
-          Hairstyles
+          Estilos
         </a>
       </li>
     </ul>

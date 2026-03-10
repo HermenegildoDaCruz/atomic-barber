@@ -11,7 +11,13 @@ export default function Hero() {
     >
       <h1 className="heading-primary">Vamos botar o cabelo na régua?</h1>
       <p className="heading-description">Sua beleza é uma prioridade.</p>
-      <button className="cta-button">Agende agora</button>
+      <motion.button className="cta-button" whileHover={{
+        scale: 1.1,
+      }} transition={{
+        duration: .3,
+        type: 'spring',
+        stiffness: 400
+      }}>Agende agora</motion.button>
       <div className="hero-img-box">
         <img src={hero_img} alt="Hero" className="hero-img" />
         <div className="blur-down"></div>
